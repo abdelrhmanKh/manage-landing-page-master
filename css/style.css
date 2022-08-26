@@ -29,7 +29,11 @@ body {
     font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
     position: relative;
-    overflow-x: hidden;
+
+}
+
+.overflow {
+    overflow: hidden;
 }
 
 html {
@@ -123,10 +127,18 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     margin-top: 40px;
     margin-bottom: 40px;
     overflow-x: hidden;
+    height: 35px;
+}
+
+.hamburger {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
 .small-menu {
@@ -149,6 +161,11 @@ ul {
     -o-border-radius: 10px;
 }
 
+.show {
+    top: 40px !important;
+
+}
+
 .small-menu li {
     margin-bottom: 25px;
     list-style: none;
@@ -165,6 +182,10 @@ ul {
     height: 100vh;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgb(0 0 0 / 31%) 100%);
     z-index: -99;
+}
+
+.availble {
+    display: block !important;
 }
 
 .tablet-bg {
@@ -405,7 +426,7 @@ button.splide__pagination__page {
 
 /*  Start simplify section Style   */
 .simplify {
-    background-image: url("images/bg-simplify-section-mobile.svg");
+    background-image: url("../images/bg-simplify-section-mobile.svg");
     background-color: var(--button);
     background-repeat: no-repeat;
     background-size: contain;
@@ -433,7 +454,7 @@ button.splide__pagination__page {
 @media (min-width:992px) {
     .simplify {
         text-align: left;
-        background-image: url("images/bg-simplify-section-desktop.svg");
+        background-image: url("../images/bg-simplify-section-desktop.svg");
         background-size: cover;
         background-position: bottom;
     }

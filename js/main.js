@@ -126,3 +126,18 @@ var splide = new Splide('.splide', {
 });
 
 splide.mount();
+
+
+const menu = document.querySelector('.menu');
+const hamburger = document.querySelector('.hamburger');
+const smallMenu = document.querySelector(".small-menu");
+const backBground = document.querySelector(".back");
+
+hamburger.addEventListener("click", () => {
+    hamburger.dataset.value == 1 ? hamburger.src = "/images/icon-close.svg" : hamburger.src = "/images/icon-hamburger.svg";
+    hamburger.dataset.value == 1 ? hamburger.dataset.value = 2 : hamburger.dataset.value = 1;
+    smallMenu.classList.toggle("show")
+    backBground.classList.toggle("availble");
+    document.querySelector("body").classList.toggle("overflow")
+
+});
