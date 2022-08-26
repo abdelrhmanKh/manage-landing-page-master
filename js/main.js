@@ -111,6 +111,7 @@
 var splide = new Splide('.splide', {
     autoWidth: true,
     rewind: true,
+    type: 'loop',
     arrows: false,
     focus: 'center',
     gap: "50px",
