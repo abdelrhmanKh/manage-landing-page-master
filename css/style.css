@@ -216,7 +216,7 @@ header {
     .desktop-menu {
         display: flex;
         align-items: center;
-        gap: 200px;
+        gap: 170px;
     }
 
     .des-links {
@@ -240,6 +240,7 @@ header {
     grid-column-gap: 0px;
     grid-row-gap: 33px;
     margin-bottom: 80px;
+    justify-items: center;
 }
 
 .main .container img {
@@ -374,8 +375,13 @@ button.splide__pagination__page {
     height: 10px;
     border: none;
     border-radius: 50%;
+
+}
+
+button.splide__pagination__page.is-active {
     background-color: var(--button);
 }
+
 
 .splide__list {
     margin-top: 60px !important;
@@ -383,6 +389,11 @@ button.splide__pagination__page {
 
 .splide__pagination {
     gap: 10px;
+    margin-bottom: 25px;
+}
+
+.splide {
+    margin-bottom: 20px;
 }
 
 .carousel .box {
@@ -413,14 +424,11 @@ button.splide__pagination__page {
     margin-bottom: unset;
 }
 
-.carousel span.btn.rounded-btn {
-    margin-top: 15px;
-}
 
 @media (min-width:992px) {
 
-    .carousel .slider {
-        /* display: flex; */
+    .carousel .box {
+        width: 500px;
     }
 }
 
